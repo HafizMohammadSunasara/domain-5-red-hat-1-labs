@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-10-18",
+  "scope": "Domain 5 / Linux and Open Source / Red Hat 1",
+  "completedLabs": 5,
+  "verification": "self-reported",
+  "plannedNextLab": {
+    "number": 6,
+    "title": "Building Custom Container Images",
+    "status": "not-started"
+  },
+  "entries": [
+    {
+      "id": "domain5-redhat1-2026-10-18-lab-01",
+      "date": "2026-10-18",
+      "domain": "Domain 5 — Linux and Open Source",
+      "course": "Red Hat 1",
+      "labNumber": 1,
+      "topic": "Lab 01 — Introduction to Containers",
+      "status": "completed",
+      "completedLabs": 1,
+      "verification": "self-reported",
+      "notes": "Container isolation and process lifetime; hello-world and Alpine. No screenshot captured.",
+      "evidenceUrl": null,
+      "documentationPath": "labs/lab-01-introduction-to-containers/README.md"
+    },
+    {
+      "id": "domain5-redhat1-2026-10-18-lab-02",
+      "date": "2026-10-18",
+      "domain": "Domain 5 — Linux and Open Source",
+      "course": "Red Hat 1",
+      "labNumber": 2,
+      "topic": "Lab 02 — Exploring Podman CLI",
+      "status": "completed",
+      "completedLabs": 1,
+      "verification": "self-reported",
+      "notes": "Podman CLI: ps, inspect, start, stop, restart, remove. Terminal evidence not published.",
+      "evidenceUrl": null,
+      "documentationPath": "labs/lab-02-exploring-podman-cli/README.md"
+    },
+    {
+      "id": "domain5-redhat1-2026-10-18-lab-03",
+      "date": "2026-10-18",
+      "domain": "Domain 5 — Linux and Open Source",
+      "course": "Red Hat 1",
+      "labNumber": 3,
+      "topic": "Lab 03 — Running Containers with Podman",
+      "status": "completed",
+      "completedLabs": 1,
+      "verification": "self-reported",
+      "notes": "Nginx port mapping, bind mount and naming. Two screenshots saved locally, not uploaded.",
+      "evidenceUrl": null,
+      "documentationPath": "labs/lab-03-running-containers-with-podman/README.md"
+    },
+    {
+      "id": "domain5-redhat1-2026-10-18-lab-04",
+      "date": "2026-10-18",
+      "domain": "Domain 5 — Linux and Open Source",
+      "course": "Red Hat 1",
+      "labNumber": 4,
+      "topic": "Lab 04 — Creating and Managing Pods",
+      "status": "completed",
+      "completedLabs": 1,
+      "verification": "self-reported",
+      "notes": "Podman pods, Nginx and Redis, shared networking and volume concepts. Terminal evidence not published.",
+      "evidenceUrl": null,
+      "documentationPath": "labs/lab-04-creating-and-managing-pods/README.md"
+    },
+    {
+      "id": "domain5-redhat1-2026-10-18-lab-05",
+      "date": "2026-10-18",
+      "domain": "Domain 5 — Linux and Open Source",
+      "course": "Red Hat 1",
+      "labNumber": 5,
+      "topic": "Lab 05 — Managing Container Images",
+      "status": "completed",
+      "completedLabs": 1,
+      "verification": "self-reported",
+      "notes": "Container image search, tagged pulls, metadata inspection, safe image removal. Explicitly confirmed complete; no screenshot published.",
+      "evidenceUrl": null,
+      "documentationPath": "labs/lab-05-managing-container-images/README.md"
+    }
+  ]
+}
