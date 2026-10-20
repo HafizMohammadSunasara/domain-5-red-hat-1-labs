@@ -26,7 +26,7 @@ This repository contains my original notes and reproducible examples from **Doma
 - [19 October 2026 — Labs 06–08](journals/2026-10-19.md)
 - [Lab index](labs/README.md)
 - [Progress JSON](progress/labs-progress.json)
-- [Evidence guide](evidence/README.md)
+- [Engineering Proof of Work](evidence/PROOF-OF-WORK.md)
 
 ## Recent concepts
 
