@@ -1,0 +1,4 @@
+FROM registry.access.redhat.com/ubi8/ubi-minimal
+ARG APP_BUILD_NUMBER
+ENV APP_BUILD=$APP_BUILD_NUMBER
+CMD echo "Build number: $APP_BUILD"
