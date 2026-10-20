@@ -14,7 +14,7 @@ This is the full index of the lab journal. The [repository homepage](../README.m
 | 06 | Building Custom Container Images | [Runbook](lab-06-building-custom-container-images/README.md) | — | Completed — self-reported |
 | 07 | Layer Caching and Optimization | [Runbook](lab-07-layer-caching-and-optimization/README.md) | — | Completed — self-reported |
 | 08 | Environment Variables in Images | [Runbook](lab-08-environment-variables-in-images/README.md) | — | Completed — self-reported |
-| 09 | Using ENTRYPOINT and CMD | [Practical](lab-09-using-entrypoint-and-cmd/README.md) | [Deep dive](lab-09-using-entrypoint-and-cmd/DEEP-DIVE.md) | Documentation ready — completion pending |
+| 09 | Using ENTRYPOINT and CMD | [Practical](lab-09-using-entrypoint-and-cmd/README.md) | [Deep dive](lab-09-using-entrypoint-and-cmd/DEEP-DIVE.md) | Documentation ready — Completed — self-reported |
 
 ## Format from Lab 09 onward
 
