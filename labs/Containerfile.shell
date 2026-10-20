@@ -1,0 +1,4 @@
+# Lab 09 / Task 5 — shell-form behavior experiment
+FROM registry.access.redhat.com/ubi9/ubi-minimal
+ENTRYPOINT echo "Shell form ENTRYPOINT:"
+CMD echo "Shell form CMD"

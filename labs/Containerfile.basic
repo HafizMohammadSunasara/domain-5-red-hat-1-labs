@@ -1,0 +1,4 @@
+# Lab 09 / Task 1 — exec-form ENTRYPOINT and CMD
+FROM registry.access.redhat.com/ubi9/ubi-minimal
+ENTRYPOINT ["echo", "Entrypoint says:"]
+CMD ["Default CMD message"]
