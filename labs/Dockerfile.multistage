@@ -1,0 +1,13 @@
+# Corrected illustrative example, not a record of the original exercise.
+FROM docker.io/library/python:3.11-slim AS builder
+WORKDIR /build
+COPY requirements.txt .
+RUN python -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+
+FROM docker.io/library/python:3.11-slim
+COPY --from=builder /opt/venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+WORKDIR /app
+COPY app.py .
+EXPOSE 8080
+CMD ["python", "app.py"]

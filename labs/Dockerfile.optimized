@@ -1,0 +1,9 @@
+FROM docker.io/library/ubuntu:22.04
+RUN apt-get update && \
+    apt-get install -y curl wget python3 python3-pip && \
+    pip install --no-cache-dir flask && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+COPY app.py /app/
+WORKDIR /app
+CMD ["python3", "app.py"]
