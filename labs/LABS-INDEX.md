@@ -15,7 +15,7 @@ This is the full index of the lab journal. The [repository homepage](../README.m
 | 07 | Layer Caching and Optimization | [Runbook](lab-07-layer-caching-and-optimization/README.md) | — | Completed — self-reported |
 | 08 | Environment Variables in Images | [Runbook](lab-08-environment-variables-in-images/README.md) | — | Completed — self-reported |
 | 09 | Using ENTRYPOINT and CMD | [Practical](lab-09-using-entrypoint-and-cmd/README.md) | [Deep dive](lab-09-using-entrypoint-and-cmd/DEEP-DIVE.md) | Documentation ready — Completed — self-reported |
-
+| 10 | Persisting Data with Volumes | [Practical](lab-10-persisting-data-with-volumes/README.md) | [Deep dive](lab-10-persisting-data-with-volumes/DEEP-DIVE.md) | Completed — self-reported |
 ## Format from Lab 09 onward
 
 Each new lab contains a concise **`README.md` practical guide**, a detailed **`DEEP-DIVE.md` engineering explanation**, and relevant original scripts/configurations. Future labs follow this pattern; Lab 01–08 remains as previously documented.
