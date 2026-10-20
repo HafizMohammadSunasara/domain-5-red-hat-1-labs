@@ -1,0 +1,4 @@
+FROM docker.io/library/nginx:alpine
+ENV AUTHOR="OpenShift Developer"
+COPY index.html /usr/share/nginx/html/
+RUN echo "Container built by $AUTHOR" > /build-info.txt
