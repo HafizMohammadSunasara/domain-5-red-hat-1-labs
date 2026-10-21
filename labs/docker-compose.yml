@@ -1,0 +1,14 @@
+# Final Task 3: Redis + Flask. Lab-only; local host binding for the web app.
+# Compose's service name "redis" becomes the hostname for Flask.
+services:
+  redis:
+    image: docker.io/library/redis:alpine
+
+  webapp:
+    build: .
+    ports:
+      - "127.0.0.1:5000:5000"
+    environment:
+      REDIS_HOST: redis
+    depends_on:
+      - redis
