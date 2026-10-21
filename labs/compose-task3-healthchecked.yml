@@ -1,0 +1,19 @@
+# OPTIONAL educational enhancement: health-aware dependency (provider support varies).
+services:
+  redis:
+    image: docker.io/library/redis:alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  webapp:
+    build: .
+    ports:
+      - "127.0.0.1:5000:5000"
+    environment:
+      REDIS_HOST: redis
+    depends_on:
+      redis:
+        condition: service_healthy
