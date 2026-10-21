@@ -1,0 +1,6 @@
+# Lab-only image. Do not run Node's inspector in public production workloads.
+FROM docker.io/library/node:22-alpine
+WORKDIR /app
+COPY app.js /app/app.js
+EXPOSE 3000 9229
+CMD ["node", "--inspect=0.0.0.0:9229", "app.js"]
