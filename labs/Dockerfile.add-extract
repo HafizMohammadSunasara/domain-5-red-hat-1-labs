@@ -1,0 +1,3 @@
+FROM docker.io/library/alpine:3.22
+ADD archive.tar.gz /extracted/
+RUN ls -la /extracted/ && cat /extracted/testfile.txt

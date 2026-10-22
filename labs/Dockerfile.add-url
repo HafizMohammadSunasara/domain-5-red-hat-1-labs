@@ -1,0 +1,4 @@
+FROM docker.io/library/alpine:3.22
+# Educational demo: URL follows a moving branch. Production: pin URL to a commit and verify checksum.
+ADD https://raw.githubusercontent.com/moby/moby/master/README.md /remote/README.md
+RUN test -s /remote/README.md

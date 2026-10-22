@@ -1,0 +1,4 @@
+FROM docker.io/library/alpine:3.22
+# Harmless simulation, not an actual exploit.
+ADD bad.tar.gz /malicious/
+RUN find /malicious -type f
