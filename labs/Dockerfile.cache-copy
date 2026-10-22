@@ -1,3 +1,0 @@
-FROM docker.io/library/alpine:3.22
-COPY version.txt /app/
-RUN cat /app/version.txt
