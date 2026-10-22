@@ -1,5 +1,0 @@
-# Never send secrets to the image build context
-.git
-.env
-*.pem
-*.key
