@@ -1,0 +1,7 @@
+FROM alpine:latest
+
+# Copy version file into the container
+COPY version.txt /app/
+
+# Display file content during image build
+RUN cat /app/version.txt
