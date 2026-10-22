@@ -1,0 +1,4 @@
+# Lab 02: Shell-form RUN reproduction example
+# Instructor uses latest; pin a digest for strict reproducibility.
+FROM docker.io/library/alpine:latest
+RUN apk add --no-cache curl

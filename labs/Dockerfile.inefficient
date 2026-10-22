@@ -1,0 +1,5 @@
+# Educational anti-pattern: update and deletion occur in separate layers.
+FROM docker.io/library/ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y nginx
+RUN rm -rf /var/lib/apt/lists/*

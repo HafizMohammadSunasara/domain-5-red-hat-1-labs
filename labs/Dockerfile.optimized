@@ -1,0 +1,5 @@
+# Educational optimized comparison: cache cleanup in the same RUN.
+FROM docker.io/library/ubuntu:latest
+RUN apt-get update && \
+    apt-get install -y nginx && \
+    rm -rf /var/lib/apt/lists/*
