@@ -1,0 +1,6 @@
+# Red Hat UBI 8.7 base image (version-tag pinned, not digest pinned)
+FROM registry.access.redhat.com/ubi8/ubi:8.7
+
+LABEL maintainer="hafiz mohammad"
+
+RUN echo "base image successfully set up" > /tmp/status.txt
