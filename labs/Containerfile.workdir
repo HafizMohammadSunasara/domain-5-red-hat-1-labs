@@ -1,0 +1,6 @@
+# Topic 2 / Lab 04 — Task 1: WORKDIR baseline
+FROM registry.access.redhat.com/ubi9/ubi-minimal
+LABEL maintainer="Hafiz Mohammad Sunasara"
+
+WORKDIR /app
+RUN pwd > /tmp/workdir.log && whoami >> /tmp/workdir.log

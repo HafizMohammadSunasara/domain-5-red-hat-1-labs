@@ -1,0 +1,16 @@
+# Topic 2 / Lab 04 — WORKDIR + non-root USER
+# Reconstructed from the course instructions for reproducible practice.
+FROM registry.access.redhat.com/ubi9/ubi-minimal
+LABEL maintainer="Hafiz Mohammad Sunasara"
+
+WORKDIR /app
+RUN pwd > /tmp/workdir.log && whoami >> /tmp/workdir.log
+
+# Create a dedicated UID and give it ownership of the application directory.
+RUN microdnf install -y shadow-utils && \
+    microdnf clean all && \
+    useradd -u 1001 -d /home/appuser -m appuser && \
+    chown -R appuser:appuser /app
+
+USER appuser
+RUN whoami > /tmp/user.log && ls -ld /app >> /tmp/user.log
