@@ -1,0 +1,13 @@
+# Task 4: Non-root Nginx with an unprivileged port and writable runtime paths.
+# In production, pin the verified image digest and scan on every update.
+FROM docker.io/library/alpine:latest
+
+RUN apk add --no-cache nginx \
+    && adduser -D -u 10001 nginxuser \
+    && mkdir -p /var/lib/nginx /app \
+    && chown -R nginxuser:nginxuser /var/lib/nginx /app
+
+COPY nginx.conf /etc/nginx/nginx.conf
+USER nginxuser
+EXPOSE 8080
+CMD ["nginx", "-g", "daemon off;"]

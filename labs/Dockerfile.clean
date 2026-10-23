@@ -1,0 +1,5 @@
+# Task 2: Explore package cache cleanup behavior.
+# Demonstration only: removing files in a later image layer does NOT erase
+# bytes retained in the parent image layers.
+FROM docker.io/library/nginx:latest
+RUN rm -rf /var/cache/apt/* /var/lib/apt/lists/*

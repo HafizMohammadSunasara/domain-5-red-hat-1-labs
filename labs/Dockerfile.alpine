@@ -1,0 +1,4 @@
+# Task 3: Minimal Linux base with Nginx installed.
+# Floating tags are used to match the course; pin digests in real deployments.
+FROM docker.io/library/alpine:latest
+RUN apk add --no-cache nginx
