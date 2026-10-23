@@ -1,0 +1,25 @@
+# Topic 2 / Lab 04 / Tasks 2-4 — non-root appuser
+# Reconstructed, reproducible teaching example; not an exported original lab image.
+FROM registry.access.redhat.com/ubi9/ubi-minimal
+LABEL maintainer="Hafiz Mohammad Sunasara" \
+      org.opencontainers.image.description="Lab 04: WORKDIR and non-root USER"
+
+WORKDIR /app
+
+# Record the state before creating a dedicated application user.
+RUN pwd > /tmp/workdir.log && \
+    whoami >> /tmp/workdir.log
+
+# Root privileges are needed at build time to install tools, create a user,
+# and prepare a writable application directory.
+RUN microdnf install -y shadow-utils && \
+    microdnf clean all && \
+    useradd -u 1001 -d /home/appuser -m appuser && \
+    chown -R appuser:appuser /app
+
+# All following RUN instructions and the default runtime use this identity.
+USER appuser
+
+# Writes a build-time verification record in world-writable /tmp.
+RUN whoami > /tmp/user.log && \
+    ls -ld /app >> /tmp/user.log
