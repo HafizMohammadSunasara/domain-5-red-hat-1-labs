@@ -1,0 +1,6 @@
+# Lab 06 - Task 04: wrapper script that hands over to the actual process.
+FROM docker.io/library/alpine:latest
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod 0755 /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["echo", "Default execution"]

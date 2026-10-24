@@ -1,0 +1,4 @@
+# Lab 06 - Task 03: CMD supplies default args for ENTRYPOINT.
+FROM docker.io/library/alpine:latest
+ENTRYPOINT ["echo"]
+CMD ["DEFAULT MESSAGE"]
