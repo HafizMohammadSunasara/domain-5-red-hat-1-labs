@@ -1,0 +1,6 @@
+# Task 2: ENTRYPOINT receives CMD defaults, overridden by runtime arguments
+FROM docker.io/library/alpine:latest
+COPY entrypoint.parameters.sh /entrypoint.sh
+RUN chmod 755 /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["echo", "Default command executed"]

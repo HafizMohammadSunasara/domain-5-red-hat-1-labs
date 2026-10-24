@@ -1,0 +1,6 @@
+# Task 4: command dispatcher demonstration
+FROM docker.io/library/alpine:latest
+COPY entrypoint.commands.sh /entrypoint.sh
+RUN chmod 755 /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["start", "default"]

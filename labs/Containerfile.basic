@@ -1,0 +1,5 @@
+# Task 1: inspect startup context
+FROM docker.io/library/alpine:latest
+COPY entrypoint.basic.sh /entrypoint.sh
+RUN chmod 755 /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]

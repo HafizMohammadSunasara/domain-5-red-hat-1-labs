@@ -1,0 +1,6 @@
+# Task 3: independent mode-specific entrypoint image
+FROM docker.io/library/alpine:latest
+COPY entrypoint.modes.sh /entrypoint.sh
+RUN chmod 755 /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["echo", "Running container"]
