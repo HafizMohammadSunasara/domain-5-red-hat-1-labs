@@ -1,0 +1,16 @@
+.git/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+*.log
+*.zip
+*.png
+*.jpg
+*.jpeg
+README.md
+DEEP-DIVE.md
+evidence/
+tests/

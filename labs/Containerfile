@@ -1,0 +1,16 @@
+# Minimal, reproducible teaching image for host-to-container port mapping.
+# 3.12-slim is a version-family tag, not immutable; pin its digest for strict reproducibility.
+FROM docker.io/library/python:3.12-slim
+
+WORKDIR /app
+
+# Copy dependency manifest separately for better layer-cache reuse.
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app.py .
+
+# Documents the TCP port used by the app; does NOT publish it on the host.
+EXPOSE 8080/tcp
+
+CMD ["python", "app.py"]
